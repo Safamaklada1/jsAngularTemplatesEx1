@@ -1,0 +1,21 @@
+img {
+	height: auto;
+	width: auto;
+}
+li {
+	list-style: none;
+	float: left;
+	margin-left: 50px;
+}
+p {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	text-align: center;
+}
+.clearfix {
+	clear: both;
+}

@@ -1,0 +1,32 @@
+<html ng-app="app">
+	<head>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/angular.js"></script>
+		<script src="app/app.js"></script>
+	</head>
+	<body>
+		<input ng-model="search.name" placeholder="search" />
+		<nav ng-controller="actor">
+			<ul>
+				<li class="list1" ng-repeat="l in lists">
+					{{l}}
+				</li>
+
+			</ul>
+		</nav>
+		<div class='clearfix'></div>
+		<nav ng-controller="actor">
+			<h1>ACTORS</h1>
+			<ul>
+				<li ng-repeat="a in actors|filter:search"><img ng-src="img/{{a.name}}.jpg" ng-click="myStyle={'border':'2px'}"/>
+					<p>
+						<a href="{{a.path}}" target="_blank">{{a.name}}</a>
+					</p>
+				</li>
+
+			</ul>
+		</nav>
+
+	</body>
+</html>
